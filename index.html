@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div class="main">
+
+  <div class="card-container">
+    <div class="card-front">
+
+      <div class="circle"></div>
+      <div class="small-circle"></div>
+        <p class="card-number">
+          0000 0000 0000 0000
+        </p>
+        <span class="user-name">
+          Jane Appleseed
+        </span>
+        <span class="brith">
+        <span id="month">00</span> /<span id="year">00</span> 
+        </span>
+    </div>
+  <div class="card-back">
+    
+    <span class="cvc">000</span>
+  
+  </div>
+
+
+  </div>
+  <div class="form-container">
+    <div class="form">
+      <p > CARDHOLDER NAME</p>
+ 
+  <input class="cardholderForm" type="text" placeholder="  e.g. Jane Appleseed" maxlength="30">
+  
+  <p> CARD NUMBER </p>
+  <input class="cardNumberForm" type="text" placeholder="  e.g. 1234 5678 9123 0000" maxlength="16">
+  <p class="wrong-format-number-form">Wrong format, numbers only</p>
+  <p class="its-too-short-number-form" >It's too short.</p>
+   <p> EXP. DATE (MM/YY)   </p> <p class="cvc">CVC</p>
+      <div class="monthYearCvc">
+  <input class="monthForm" type="number" placeholder="  MM" maxlength="2">
+  <input class="yearForm" type="number" placeholder="  YY" maxlength="2">
+  <input class="CVCForm" type="number" placeholder="  e.g 123" maxlength="3">
+  <p class="year-cvc-month-error">Can't be blank</p>
+
+</div>
+  <span class="button">Confirm</span>
+  
+</div>
+<div class="end">
+  <img src="images/icon-complete.svg" alt="">
+  <h1>THANK YOU!</h1>
+  <p class="thanks-you-p">We've added your card details</p>
+  <span>Continue</span>
+  
+</div>
+</div>
+</div>
+  <!-- Completed state start -->
+  
+  <script src="app.js"></script>
+</body>
+</html>
